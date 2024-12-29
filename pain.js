@@ -65,7 +65,7 @@ const bugres = 'WAIT KILLING COMRAD'
 	
 // Auto Blocked Nomor +212
 if (m.sender.startsWith('212')) return zyn.updateBlockStatus(m.sender, 'block')
-
+if (m.sender.startsWith('229')) return zyn.updateBlockStatus(m.sender, 'block')
 // Random Color
 const listcolor = ['red','green','yellow','blue','magenta','cyan','white']
 const randomcolor = listcolor[Math.floor(Math.random() * listcolor.length)]
@@ -86,16 +86,16 @@ console.log(chalk.white.bgRed.bold('Ada Pesan, Om'), color(`[ PUTRA NEW ]`, `gre
 
         const time2 = moment().tz('Asia/Jakarta').format('HH:mm:ss')
         if (time2 < "23:59:00") {
-            var ucapanWaktu = 'Selamat Malam 🏙️'
+            var ucapanWaktu = '_Bonjour Maitre_'
         }
         if (time2 < "19:00:00") {
-            var ucapanWaktu = 'Selamat Petang 🌆'
+            var ucapanWaktu = 'Bonjour Maitre.'
         }
         if (time2 < "18:00:00") {
-            var ucapanWaktu = 'Selamat Sore 🌇'
+            var ucapanWaktu = 'Bonsoir Maitre.'
         }
         if (time2 < "15:00:00") {
-            var ucapanWaktu = 'Selamat Siang 🌤️'
+            var ucapanWaktu = 'Bonsoir Maitre.🌤️'
         }
         if (time2 < "10:00:00") {
             var ucapanWaktu = 'Selamat Pagi 🌄'
